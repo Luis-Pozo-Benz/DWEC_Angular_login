@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './formulari-login.scss',
 })
 export class FormulariLogin {
+  username:string = '';
 
+  password:string = '';
+
+  loginData() {
+    console.log(this.username);
+    console.log(this.password);
+  }
 }
