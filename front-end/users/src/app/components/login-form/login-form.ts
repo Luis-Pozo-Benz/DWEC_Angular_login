@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-formulari-login',
-  imports: [],
-  templateUrl: './formulari-login.html',
-  styleUrl: './formulari-login.scss',
+  selector: 'app-login-form',
+  imports: [FormsModule],
+  templateUrl: './login-form.html',
+  styleUrl: './login-form.scss',
 })
 export class FormulariLogin {
   username:string = '';
@@ -12,7 +13,7 @@ export class FormulariLogin {
   password:string = '';
 
   loginData() {
-    console.log(this.username);
-    console.log(this.password);
+    console.log("Username: " + this.username);
+    console.log("Password: " + this.password);
   }
 }
