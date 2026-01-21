@@ -12,7 +12,7 @@ export class FormulariLogin {
 
   password:string = '';
 
-  loginData() {
+  onSubmit() {
     console.log("Username: " + this.username);
     console.log("Password: " + this.password);
   }
