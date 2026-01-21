@@ -7,5 +7,3 @@ Además de ello, tenemos que concretar los modelos de "login" y "register": para
 
 # Componente formulario
 También puede ser el primer paso, para entender mejor qué necesitamos exactamente para complementar la parte de backend. Con (ngSubmit) y [(ngModel)] en el html guardamos los parámetros introducidos, que luego se podrán referenciar en login-form.ts.
-
-# aidia
