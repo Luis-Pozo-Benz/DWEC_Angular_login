@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login-form',
@@ -12,8 +13,11 @@ export class FormulariLogin {
 
   password:string = '';
 
+  constructor(private authService: AuthService) {};
+
   onSubmit() {
     console.log("Username: " + this.username);
     console.log("Password: " + this.password);
+    this.authService.login({username: this.username, password: this.password});
   }
 }
